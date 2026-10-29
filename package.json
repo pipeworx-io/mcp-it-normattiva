@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-it-normattiva",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Italy — national legislation, from Normattiva's Open Data service (Istituto Poligrafico e Zecca dello Stato, operating the portal for the Presidenza del Consiglio dei Ministri).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-it-normattiva": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "it-normattiva"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-it-normattiva.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/it-normattiva",
   "pipeworx": {
-    "sourceHash": "v1-c44e3b25c10e0d95b99d963e7c05deb07c61409e132e38c7a6199fd1858873de",
-    "sourceCommit": "33741fe6d9ba71856e73fa683c73572d1ddf2e93"
+    "mode": "gateway",
+    "slug": "it-normattiva",
+    "gatewaySlug": "it-normattiva",
+    "sourceHash": "v1-543104d98399b1bf23483d35dc45e6cb24887d9675c6b8537e542a7440544a6c",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
