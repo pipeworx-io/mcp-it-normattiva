@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-it-normattiva",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Italy — national legislation, from Normattiva's Open Data service (Istituto Poligrafico e Zecca dello Stato, operating the portal for the Presidenza del Consiglio dei Ministri).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "it-normattiva",
     "gatewaySlug": "it-normattiva",
-    "sourceHash": "v1-543104d98399b1bf23483d35dc45e6cb24887d9675c6b8537e542a7440544a6c",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-19d54d71bb7de443d99f42b658f82656eef41fa356341497b3ab2df53c509efa",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
